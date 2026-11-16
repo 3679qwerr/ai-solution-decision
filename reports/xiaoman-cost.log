@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "currency": "USD",
+  "data_class": "simulated",
+  "stages": [
+    {
+      "name": "chat",
+      "expected_attempts_per_call": 1.03,
+      "cost_per_task": 0.003399
+    }
+  ],
+  "variable_cost_per_task": 0.003399,
+  "monthly_cost": 122.0394,
+  "tco_12_months": 3364.4728,
+  "tco_36_months": 6293.4184,
+  "operating_cost_per_success": null,
+  "volume_sensitivity": [
+    {
+      "volume_multiplier": 0.5,
+      "monthly_cost": 121.0197
+    },
+    {
+      "volume_multiplier": 1,
+      "monthly_cost": 122.0394
+    },
+    {
+      "volume_multiplier": 2,
+      "monthly_cost": 124.0788
+    }
+  ],
+  "assumptions": [
+    "All stages attempted for every task; no conditional reach probabilities.",
+    "Retries independent with constant probability; each attempt billed equally.",
+    "No implicit FX, tax, cache discount, concurrency, queueing or latency prediction.",
+    "Success rate is a user-supplied scenario/observation, not inferred from retries.",
+    "12/36-month TCO includes one integration and one end-of-horizon exit cost."
+  ]
+}

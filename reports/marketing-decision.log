@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "status": "needs_evidence",
+  "base": "llm",
+  "knowledge": "rag",
+  "orchestration": "workflow",
+  "reasons": [
+    "需要开放语义生成，先验证直接 LLM 基线。"
+  ],
+  "rejected": [
+    {
+      "option": "single_agent",
+      "reason": "没有同时证明动态规划与工具执行需求。"
+    },
+    {
+      "option": "multi_agent",
+      "reason": "未满足单 Agent 前置必要性。"
+    }
+  ],
+  "missing_evidence": [
+    "runtime_feasible: privacy/budget/latency/dependencies"
+  ]
+}

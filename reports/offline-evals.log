@@ -1,0 +1,435 @@
+{
+  "mode": "deterministic_gate_regression",
+  "model_evaluation": "not_run",
+  "rows": [
+    {
+      "id": "D01",
+      "passed": true,
+      "mismatched_fields": [],
+      "actual": {
+        "schema_version": "1.0",
+        "status": "candidate",
+        "base": "rules",
+        "knowledge": "none",
+        "orchestration": "direct",
+        "reasons": [
+          "规则可表达且无需自由生成；确定性实现优先。"
+        ],
+        "rejected": [
+          {
+            "option": "single_agent",
+            "reason": "没有同时证明动态规划与工具执行需求。"
+          },
+          {
+            "option": "multi_agent",
+            "reason": "未满足单 Agent 前置必要性。"
+          },
+          {
+            "option": "llm",
+            "reason": "基础任务没有生成需求，模型增加不确定性。"
+          }
+        ],
+        "missing_evidence": []
+      }
+    },
+    {
+      "id": "D02",
+      "passed": true,
+      "mismatched_fields": [],
+      "actual": {
+        "schema_version": "1.0",
+        "status": "candidate",
+        "base": "traditional_algorithm",
+        "knowledge": "none",
+        "orchestration": "direct",
+        "reasons": [
+          "目标是数值预测／排序，应先验证统计或传统模型基线。"
+        ],
+        "rejected": [
+          {
+            "option": "single_agent",
+            "reason": "没有同时证明动态规划与工具执行需求。"
+          },
+          {
+            "option": "multi_agent",
+            "reason": "未满足单 Agent 前置必要性。"
+          }
+        ],
+        "missing_evidence": []
+      }
+    },
+    {
+      "id": "D03",
+      "passed": true,
+      "mismatched_fields": [],
+      "actual": {
+        "schema_version": "1.0",
+        "status": "candidate",
+        "base": "retrieval",
+        "knowledge": "none",
+        "orchestration": "direct",
+        "reasons": [
+          "需要定位知识但不需要自由生成，先用可定位的检索。"
+        ],
+        "rejected": [
+          {
+            "option": "single_agent",
+            "reason": "没有同时证明动态规划与工具执行需求。"
+          },
+          {
+            "option": "multi_agent",
+            "reason": "未满足单 Agent 前置必要性。"
+          }
+        ],
+        "missing_evidence": []
+      }
+    },
+    {
+      "id": "D04",
+      "passed": true,
+      "mismatched_fields": [],
+      "actual": {
+        "schema_version": "1.0",
+        "status": "candidate",
+        "base": "llm",
+        "knowledge": "none",
+        "orchestration": "direct",
+        "reasons": [
+          "需要开放语义生成，先验证直接 LLM 基线。"
+        ],
+        "rejected": [
+          {
+            "option": "single_agent",
+            "reason": "没有同时证明动态规划与工具执行需求。"
+          },
+          {
+            "option": "multi_agent",
+            "reason": "未满足单 Agent 前置必要性。"
+          }
+        ],
+        "missing_evidence": []
+      }
+    },
+    {
+      "id": "D05",
+      "passed": true,
+      "mismatched_fields": [],
+      "actual": {
+        "schema_version": "1.0",
+        "status": "candidate",
+        "base": "llm",
+        "knowledge": "rag",
+        "orchestration": "direct",
+        "reasons": [
+          "需要开放语义生成，先验证直接 LLM 基线。"
+        ],
+        "rejected": [
+          {
+            "option": "single_agent",
+            "reason": "没有同时证明动态规划与工具执行需求。"
+          },
+          {
+            "option": "multi_agent",
+            "reason": "未满足单 Agent 前置必要性。"
+          }
+        ],
+        "missing_evidence": []
+      }
+    },
+    {
+      "id": "D06",
+      "passed": true,
+      "mismatched_fields": [],
+      "actual": {
+        "schema_version": "1.0",
+        "status": "candidate",
+        "base": "llm",
+        "knowledge": "none",
+        "orchestration": "workflow",
+        "reasons": [
+          "需要开放语义生成，先验证直接 LLM 基线。"
+        ],
+        "rejected": [
+          {
+            "option": "single_agent",
+            "reason": "没有同时证明动态规划与工具执行需求。"
+          },
+          {
+            "option": "multi_agent",
+            "reason": "未满足单 Agent 前置必要性。"
+          }
+        ],
+        "missing_evidence": []
+      }
+    },
+    {
+      "id": "D07",
+      "passed": true,
+      "mismatched_fields": [],
+      "actual": {
+        "schema_version": "1.0",
+        "status": "candidate",
+        "base": "llm",
+        "knowledge": "none",
+        "orchestration": "single_agent",
+        "reasons": [
+          "需要开放语义生成，先验证直接 LLM 基线。"
+        ],
+        "rejected": [
+          {
+            "option": "multi_agent",
+            "reason": "独立任务、并行净收益或冲突控制证据不足。"
+          }
+        ],
+        "missing_evidence": []
+      }
+    },
+    {
+      "id": "D08",
+      "passed": true,
+      "mismatched_fields": [],
+      "actual": {
+        "schema_version": "1.0",
+        "status": "candidate",
+        "base": "llm",
+        "knowledge": "none",
+        "orchestration": "multi_agent",
+        "reasons": [
+          "需要开放语义生成，先验证直接 LLM 基线。"
+        ],
+        "rejected": [],
+        "missing_evidence": []
+      }
+    },
+    {
+      "id": "D09",
+      "passed": true,
+      "mismatched_fields": [],
+      "actual": {
+        "schema_version": "1.0",
+        "status": "candidate",
+        "base": "llm",
+        "knowledge": "none",
+        "orchestration": "single_agent",
+        "reasons": [
+          "需要开放语义生成，先验证直接 LLM 基线。"
+        ],
+        "rejected": [
+          {
+            "option": "multi_agent",
+            "reason": "独立任务、并行净收益或冲突控制证据不足。"
+          }
+        ],
+        "missing_evidence": []
+      }
+    },
+    {
+      "id": "D10",
+      "passed": true,
+      "mismatched_fields": [],
+      "actual": {
+        "schema_version": "1.0",
+        "status": "needs_evidence",
+        "base": "unknown",
+        "knowledge": "none",
+        "orchestration": "direct",
+        "reasons": [
+          "任务与成功定义不足；先研究，不推断 AI 收益。"
+        ],
+        "rejected": [],
+        "missing_evidence": []
+      }
+    },
+    {
+      "id": "D11",
+      "passed": true,
+      "mismatched_fields": [],
+      "actual": {
+        "schema_version": "1.0",
+        "status": "needs_evidence",
+        "base": "llm",
+        "knowledge": "none",
+        "orchestration": "direct",
+        "reasons": [
+          "需要开放语义生成，先验证直接 LLM 基线。"
+        ],
+        "rejected": [
+          {
+            "option": "single_agent",
+            "reason": "没有同时证明动态规划与工具执行需求。"
+          },
+          {
+            "option": "multi_agent",
+            "reason": "未满足单 Agent 前置必要性。"
+          }
+        ],
+        "missing_evidence": [
+          "runtime_feasible: privacy/budget/latency/dependencies"
+        ]
+      }
+    },
+    {
+      "id": "D12",
+      "passed": true,
+      "mismatched_fields": [],
+      "actual": {
+        "schema_version": "1.0",
+        "status": "blocked",
+        "base": "llm",
+        "knowledge": "none",
+        "orchestration": "direct",
+        "reasons": [
+          "需要开放语义生成，先验证直接 LLM 基线。",
+          "至少一项硬约束不满足；仅保留条件候选，不允许据此上线。"
+        ],
+        "rejected": [
+          {
+            "option": "single_agent",
+            "reason": "没有同时证明动态规划与工具执行需求。"
+          },
+          {
+            "option": "multi_agent",
+            "reason": "未满足单 Agent 前置必要性。"
+          }
+        ],
+        "missing_evidence": []
+      }
+    },
+    {
+      "id": "D13",
+      "passed": true,
+      "mismatched_fields": [],
+      "actual": {
+        "schema_version": "1.0",
+        "status": "needs_evidence",
+        "base": "llm",
+        "knowledge": "rag",
+        "orchestration": "workflow",
+        "reasons": [
+          "需要开放语义生成，先验证直接 LLM 基线。"
+        ],
+        "rejected": [
+          {
+            "option": "single_agent",
+            "reason": "没有同时证明动态规划与工具执行需求。"
+          },
+          {
+            "option": "multi_agent",
+            "reason": "未满足单 Agent 前置必要性。"
+          }
+        ],
+        "missing_evidence": [
+          "runtime_feasible: privacy/budget/latency/dependencies"
+        ]
+      }
+    },
+    {
+      "id": "D14",
+      "passed": true,
+      "mismatched_fields": [],
+      "actual": {
+        "schema_version": "1.0",
+        "status": "needs_evidence",
+        "base": "llm",
+        "knowledge": "none",
+        "orchestration": "workflow",
+        "reasons": [
+          "需要开放语义生成，先验证直接 LLM 基线。"
+        ],
+        "rejected": [
+          {
+            "option": "single_agent",
+            "reason": "没有同时证明动态规划与工具执行需求。"
+          },
+          {
+            "option": "multi_agent",
+            "reason": "未满足单 Agent 前置必要性。"
+          }
+        ],
+        "missing_evidence": [
+          "runtime_feasible: privacy/budget/latency/dependencies"
+        ]
+      }
+    },
+    {
+      "id": "D16",
+      "passed": true,
+      "mismatched_fields": [],
+      "actual": {
+        "schema_version": "1.0",
+        "status": "candidate",
+        "base": "llm",
+        "knowledge": "rag",
+        "orchestration": "direct",
+        "reasons": [
+          "需要开放语义生成，先验证直接 LLM 基线。"
+        ],
+        "rejected": [
+          {
+            "option": "single_agent",
+            "reason": "没有同时证明动态规划与工具执行需求。"
+          },
+          {
+            "option": "multi_agent",
+            "reason": "未满足单 Agent 前置必要性。"
+          }
+        ],
+        "missing_evidence": []
+      }
+    },
+    {
+      "id": "D17",
+      "passed": true,
+      "mismatched_fields": [],
+      "actual": {
+        "schema_version": "1.0",
+        "status": "candidate",
+        "base": "rules",
+        "knowledge": "none",
+        "orchestration": "workflow",
+        "reasons": [
+          "规则可表达且无需自由生成；确定性实现优先。"
+        ],
+        "rejected": [
+          {
+            "option": "single_agent",
+            "reason": "没有同时证明动态规划与工具执行需求。"
+          },
+          {
+            "option": "multi_agent",
+            "reason": "未满足单 Agent 前置必要性。"
+          },
+          {
+            "option": "llm",
+            "reason": "基础任务没有生成需求，模型增加不确定性。"
+          }
+        ],
+        "missing_evidence": []
+      }
+    },
+    {
+      "id": "D18",
+      "passed": true,
+      "mismatched_fields": [],
+      "actual": {
+        "schema_version": "1.0",
+        "status": "candidate",
+        "base": "llm",
+        "knowledge": "none",
+        "orchestration": "single_agent",
+        "reasons": [
+          "需要开放语义生成，先验证直接 LLM 基线。"
+        ],
+        "rejected": [
+          {
+            "option": "multi_agent",
+            "reason": "独立任务、并行净收益或冲突控制证据不足。"
+          }
+        ],
+        "missing_evidence": []
+      }
+    }
+  ],
+  "passed": true,
+  "trigger_cases_not_executed": 3
+}

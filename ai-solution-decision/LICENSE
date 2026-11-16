@@ -1,0 +1,21 @@
+AI Solution Decision — license map
+
+Documentation, SKILL.md, references, examples, evaluation cases, metadata,
+and prose reports are licensed under Creative Commons Attribution 4.0
+International (CC BY 4.0).
+Full legal text: licenses/CC-BY-4.0.txt
+Canonical license: https://creativecommons.org/licenses/by/4.0/
+
+Attribution for new documentation: AI Solution Decision contributors (2026).
+Adapted concepts: CZ / NativeHelix, https://github.com/nickzhuchen66/nativehelix
+See ATTRIBUTION.md for exact sources and changes. No endorsement is implied.
+NativeHelix material remains available under its original CC BY 4.0 license.
+
+Original executable code under scripts/ and tests/, and CI configuration,
+is licensed under the MIT License, full text in licenses/MIT.txt.
+This MIT grant does not relicense NativeHelix documentation or grant rights
+in third-party trademarks or in Johnson44/skill source text.
+
+Johnson44/skill is credited as an organizational/methodological reference.
+No license was included in the supplied archive; its source text and archive
+are not redistributed in this package and no license grant is assumed.

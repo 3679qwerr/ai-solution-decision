@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "run_at": "2026-11-16T21:27:29.735043+08:00",
+  "timezone": "Asia/Hong_Kong",
+  "python": "3.12.14",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "test_count": 44,
+  "checks": [
+    {
+      "name": "package-validation",
+      "command": [
+        "python",
+        "scripts/validate.py"
+      ],
+      "exit_code": 0,
+      "log": "package-validation.log",
+      "log_sha256": "76aa3b58148d89cc797ae408eba304f008308b708476e2db124fcf4e5d1c7a2e"
+    },
+    {
+      "name": "unit-tests",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "unit-tests.log",
+      "log_sha256": "e9741e4faccc03bc3ee58ae5c94df473cf902ca0e35ad650e188d66721b258be"
+    },
+    {
+      "name": "offline-evals",
+      "command": [
+        "python",
+        "scripts/eval_runner.py",
+        "offline"
+      ],
+      "exit_code": 0,
+      "log": "offline-evals.log",
+      "log_sha256": "51d2a01ef12f619f08e260be904432d4fa76d760349441048fc0334b24f5603a"
+    },
+    {
+      "name": "marketing-cost",
+      "command": [
+        "python",
+        "scripts/cost_model.py",
+        "--input",
+        "examples/enterprise-marketing/cost-input.json"
+      ],
+      "exit_code": 0,
+      "log": "marketing-cost.log",
+      "log_sha256": "2bc7a14c32d0c8a478a0b96a7982576cc60275f20435fa0ed353d1775b5acd36"
+    },
+    {
+      "name": "xiaoman-cost",
+      "command": [
+        "python",
+        "scripts/cost_model.py",
+        "--input",
+        "examples/xiaoman-companion/cost-input.json"
+      ],
+      "exit_code": 0,
+      "log": "xiaoman-cost.log",
+      "log_sha256": "913ea3a02c87366eeb791f32a3752ae89a8668a07439a94b2f5482260fc9c44d"
+    },
+    {
+      "name": "marketing-decision",
+      "command": [
+        "python",
+        "scripts/decision.py",
+        "--input",
+        "examples/enterprise-marketing/decision-input.json"
+      ],
+      "exit_code": 0,
+      "log": "marketing-decision.log",
+      "log_sha256": "d7ffb0371c4a195d739875669fb47284a1996540e420591519cfad3342b1d53f"
+    }
+  ],
+  "all_passed": true,
+  "model_ab": "not_run",
+  "real_business_effects": "unknown",
+  "independent_acceptance": "not_performed"
+}

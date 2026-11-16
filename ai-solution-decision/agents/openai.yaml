@@ -1,0 +1,6 @@
+interface:
+  display_name: "AI Solution Decision"
+  short_description: "从业务痛点判断是否需要 AI，完成方案取舍、MVP、工作流与产品评测"
+  default_prompt: "使用 $ai-solution-decision 分析这个产品需求，先判断 AI 与 Agent 的必要性，再给出有证据的方案比较、MVP 与评测计划。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+trials-*/
+responses*.json
+reviews*.json
+*.zip

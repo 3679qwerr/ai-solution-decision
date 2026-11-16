@@ -1,0 +1,16 @@
+{
+  "facts": {
+    "task_known": true,
+    "structured_rules": true,
+    "numeric_prediction": false,
+    "knowledge_required": true,
+    "generation_required": true,
+    "fixed_steps": true,
+    "tool_execution": true,
+    "dynamic_planning": false,
+    "independent_subtasks": false,
+    "parallel_value_evidence": false,
+    "conflict_control_ready": false
+  },
+  "runtime_feasible": null
+}

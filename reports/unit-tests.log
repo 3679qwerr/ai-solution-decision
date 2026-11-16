@@ -1,0 +1,49 @@
+test_cli_error_and_unicode_path (test_skill.CostTests.test_cli_error_and_unicode_path) ... ok
+test_cost_per_success_includes_fixed_cost (test_skill.CostTests.test_cost_per_success_includes_fixed_cost) ... ok
+test_example_outputs_reproducible (test_skill.CostTests.test_example_outputs_reproducible) ... ok
+test_hand_calculated_tco_with_retries_and_human (test_skill.CostTests.test_hand_calculated_tco_with_retries_and_human) ... ok
+test_invalid_cost_domains (test_skill.CostTests.test_invalid_cost_domains) ... ok
+test_missing_price_no_implicit_quote (test_skill.CostTests.test_missing_price_no_implicit_quote) ... ok
+test_nonfinite_json_rejected (test_skill.CostTests.test_nonfinite_json_rejected) ... ok
+test_probability_one_bounded_at_max_attempts (test_skill.CostTests.test_probability_one_bounded_at_max_attempts) ... ok
+test_retry_and_price_bounds (test_skill.CostTests.test_retry_and_price_bounds) ... ok
+test_unknown_success_stays_unknown (test_skill.CostTests.test_unknown_success_stays_unknown) ... ok
+test_zero_success_not_free_success (test_skill.CostTests.test_zero_success_not_free_success) ... ok
+test_zero_volume_retains_fixed_cost (test_skill.CostTests.test_zero_volume_retains_fixed_cost) ... ok
+test_agent_requires_dynamic_tools (test_skill.DecisionTests.test_agent_requires_dynamic_tools) ... ok
+test_all_three_multi_agent_evidence_gates (test_skill.DecisionTests.test_all_three_multi_agent_evidence_gates) ... ok
+test_constraints_block_even_complex_candidate (test_skill.DecisionTests.test_constraints_block_even_complex_candidate) ... ok
+test_dynamic_words_without_tools_do_not_create_agent (test_skill.DecisionTests.test_dynamic_words_without_tools_do_not_create_agent) ... ok
+test_each_unknown_fact_is_not_false (test_skill.DecisionTests.test_each_unknown_fact_is_not_false) ... ok
+test_eval_oracles (test_skill.DecisionTests.test_eval_oracles) ... ok
+test_fixed_tools_are_workflow (test_skill.DecisionTests.test_fixed_tools_are_workflow) ... ok
+test_missing_feasibility_never_approves (test_skill.DecisionTests.test_missing_feasibility_never_approves) ... ok
+test_missing_task_no_invented_metrics (test_skill.DecisionTests.test_missing_task_no_invented_metrics) ... ok
+test_nonobject_inputs_fail_cleanly (test_skill.DecisionTests.test_nonobject_inputs_fail_cleanly) ... ok
+test_numerical_task_uses_traditional_baseline (test_skill.DecisionTests.test_numerical_task_uses_traditional_baseline) ... ok
+test_rag_can_be_in_workflow (test_skill.DecisionTests.test_rag_can_be_in_workflow) ... ok
+test_retrieval_without_generation (test_skill.DecisionTests.test_retrieval_without_generation) ... ok
+test_rule_task_needs_no_agent (test_skill.DecisionTests.test_rule_task_needs_no_agent) ... ok
+test_text_injection_cannot_be_fact (test_skill.DecisionTests.test_text_injection_cannot_be_fact) ... ok
+test_unknown_fact_names_rejected (test_skill.DecisionTests.test_unknown_fact_names_rejected) ... ok
+test_all_metric_categories_required (test_skill.PackageAndVerifierTests.test_all_metric_categories_required) ... ok
+test_critical_failure_vetoes_perfect_score (test_skill.PackageAndVerifierTests.test_critical_failure_vetoes_perfect_score) ... ok
+test_duplicate_trials_rejected (test_skill.PackageAndVerifierTests.test_duplicate_trials_rejected) ... ok
+test_every_control_is_required (test_skill.PackageAndVerifierTests.test_every_control_is_required) ... ok
+test_install_and_no_overwrite (test_skill.PackageAndVerifierTests.test_install_and_no_overwrite) ... ok
+test_invalid_verifier_evidence_cannot_be_called_verified (test_skill.PackageAndVerifierTests.test_invalid_verifier_evidence_cannot_be_called_verified) ... ok
+test_malformed_enum_types_are_failed_per_trial (test_skill.PackageAndVerifierTests.test_malformed_enum_types_are_failed_per_trial) ... ok
+test_malformed_model_outputs_fail_without_repair (test_skill.PackageAndVerifierTests.test_malformed_model_outputs_fail_without_repair) ... ok
+test_missing_manual_review_reported (test_skill.PackageAndVerifierTests.test_missing_manual_review_reported) ... ok
+test_missing_metric_definition_fails (test_skill.PackageAndVerifierTests.test_missing_metric_definition_fails) ... ok
+test_out_of_scope_minimal_response (test_skill.PackageAndVerifierTests.test_out_of_scope_minimal_response) ... ok
+test_package_links_and_required_resources (test_skill.PackageAndVerifierTests.test_package_links_and_required_resources) ... ok
+test_prepare_does_not_leak_oracle_to_baseline (test_skill.PackageAndVerifierTests.test_prepare_does_not_leak_oracle_to_baseline) ... ok
+test_unknown_or_simulation_label_required (test_skill.PackageAndVerifierTests.test_unknown_or_simulation_label_required) ... ok
+test_valid_synthetic_response_only_checks_verifier (test_skill.PackageAndVerifierTests.test_valid_synthetic_response_only_checks_verifier) ... ok
+test_wrong_decision_and_trigger_rejected (test_skill.PackageAndVerifierTests.test_wrong_decision_and_trigger_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.227s
+
+OK

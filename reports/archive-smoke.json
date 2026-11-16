@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "tested_at": "2026-11-16T21:29:23.365831+08:00",
+  "checks": [
+    {
+      "zip": "ai-solution-decision-install.zip",
+      "skill_files": 35,
+      "byte_hashes_match": true,
+      "checks": [
+        {
+          "command": [
+            "python",
+            "scripts/validate.py"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-v"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "python",
+            "scripts/eval_runner.py",
+            "offline"
+          ],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "zip": "ai-solution-decision-source.zip",
+      "skill_files": 35,
+      "byte_hashes_match": true,
+      "checks": [
+        {
+          "command": [
+            "python",
+            "scripts/validate.py"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-v"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "python",
+            "scripts/eval_runner.py",
+            "offline"
+          ],
+          "exit_code": 0
+        }
+      ]
+    }
+  ],
+  "note": "Skill checks run on clean ZIP extraction; this is not a host/model integration test."
+}
