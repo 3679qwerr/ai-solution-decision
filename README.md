@@ -59,5 +59,3 @@ python scripts/cost_model.py --input examples/enterprise-marketing/cost-input.js
 - 20 个评测案例，含 17 个门槛回归与 3 个范围外输入；负触发需要真实模型验证。
 - 自动检查包含引用完整性、非 Agent 场景、未知证据、成本边界、指标与权限降级字段、安装与评测器失败测试。
 - CI 定义 Windows/Linux 与 Python 3.10/3.12 检查矩阵；本地验证范围见测试报告，发布后的远程运行状态见 [GitHub Actions](https://github.com/3679qwerr/ai-solution-decision/actions/workflows/ci.yml)。
-
-研究借鉴 [Johnson44/skill](https://github.com/Johnson44/skill) 的目录组织与证据方法；改编 **CZ / NativeHelix** 的 [工作流、架构与 Harness 概念](https://github.com/nickzhuchen66/nativehelix)。文档 CC BY 4.0，原创脚本与测试 MIT。详见 [来源署名](ai-solution-decision/ATTRIBUTION.md) 和 [许可证](LICENSE)。参考项目作者未背书本项目。
