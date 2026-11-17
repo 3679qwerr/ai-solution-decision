@@ -86,9 +86,3 @@ ai-solution-decision/
 ├── ATTRIBUTION.md           来源与修改说明
 └── LICENSE                  按文件类别的授权范围
 ```
-
-## 来源与求职展示边界
-
-研究参考 [Johnson44/skill](https://github.com/Johnson44/skill) 的组织方法，以及 **CZ / NativeHelix** 的 [工作流、架构与 Harness 方法](https://github.com/nickzhuchen66/nativehelix)。NativeHelix 的改编内容保留 CC BY 4.0 署名与修改说明；Johnson44 归档未附许可证，因此不分发其源码或复制正文。具体见 [ATTRIBUTION.md](ATTRIBUTION.md) 与 [LICENSE](LICENSE)。原创脚本和测试为 MIT，文档为 CC BY 4.0。
-
-适合展示的能力是需求拆解、技术取舍、Agent 边界与评测工程。请描述为“开发并验证一套产品决策 Skill”，不要写成“已提高企业转化率”“已验证留存”或“经过独立生产验收”。
